@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="Stylesheet" type="text/css" href="../CSS/fagsider.css">
+    <link rel="icon" href="../pics/OsloMet_logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <a href="../HTML/index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a>
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../pics/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+            <a href="../HTML/index.html">
+                <div class="menuLink" id=active>HOVEDSIDE</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">OPPGAVER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">KALENDER</div>
+            </a>
+        </div>
+        <div class="linker2">
+            <a href="#">
+                <div class="menuLink">KARAKTERER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">RESSURSER</div>
+            </a>
+            <a href="https://outlook.com/hioa.no/" target="_blank">
+                <div class="menuLink">EPOST</div>
+            </a>
+        </div>
+    </div>
+    <div class="contentWrap">
+        
+        
+        
+        
+<!-- Under her kommer alt som er spesifikt for fagsidene-->
+        
+
+    <div class="fagsideMeny">
+        <div class="fagsideDrop">
+            <button class="fagsideDropBtn">VELG FAG HER</button>
+            <div class="fagsideDropInnhold">
+                <a href="#">Diskret matematikk</a>
+                <a href="#">Programmering</a>
+                <a href="#">Webutvikling</a>
+             </div>
+            </div>
+        <a href="fagside_forside.html"class="active">FORSIDE</a>
+        <a href="fagside_oppgaver.html">OPPGAVER</a>
+        <a href="fagside_fremdriftsplan.html">FREMDRIFTSPLAN</a>
+        <a href="fagside_diskusjon.html">DISKUSJON</a>
+        <a href="fagside_filer.html">FILER</a>
+    
+    </div>
+    
+    
+    <div class="fagsideTekst">
+        
+        
+        <p>    Her kan det stå en kort introduksjon om faget og være en lenke            til informasjon om faget elns
+        </p>
+        
+        
+        <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam leo ligula, iaculis condimentum velit et, bibendum pellentesque mauris. Suspendisse pulvinar magna in aliquet vehicula. Proin tristique risus at feugiat varius. Vivamus cursus, lectus id porta eleifend, sapien urna molestie leo, at vulputate risus mauris egestas dui. Nullam nec elit dictum, accumsan ante molestie, suscipit augue. Aliquam tristique neque quis erat placerat rutrum. Morbi et neque id nibh fringilla gravida at ac est. Donec nec iaculis tortor, nec sodales ipsum. Proin accumsan pellentesque sapien, a placerat ligula aliquet et. Nam quis purus eget urna pharetra viverra fringilla sed ex. Quisque malesuada vel ex id vehicula.
+
+Curabitur at neque in lorem viverra viverra. Integer egestas nisl et mauris venenatis dictum. In orci quam, congue vitae elementum quis, hendrerit volutpat sem. In ac faucibus lacus. Fusce cursus, mi mollis tincidunt porttitor, augue neque fringilla tortor, vel ullamcorper enim erat eget ante. Integer id massa lorem. Vestibulum sed sagittis velit, eu tincidunt ex. Nullam non nunc id nisl convallis scelerisque. Vivamus nisi mi, gravida mattis quam sit amet, commodo malesuada nunc. Nullam pharetra suscipit ipsum, sit amet laoreet odio auctor et. Quisque fermentum rutrum rhoncus. In tincidunt purus vel enim tristique, a ullamcorper nisi consequat. Aliquam iaculis tincidunt metus in dapibus. Morbi id tempor mi, porttitor tempus nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et tellus neque.
+
+Nunc vehicula massa nec aliquet congue. Phasellus iaculis tellus volutpat magna aliquet, quis sodales libero ultrices. Nullam auctor sem tellus, sit amet tempus est dictum in. Etiam laoreet sit amet elit vitae volutpat. Proin pulvinar nisl nisl, eu aliquam orci blandit nec. Etiam imperdiet nulla id tellus semper, a gravida risus finibus. Maecenas ultrices varius neque eget finibus. Maecenas vitae luctus sapien. Praesent maximus tincidunt libero, ac euismod metus luctus nec. Nulla at viverra ex, ac pulvinar eros. Mauris vitae mi nec justo interdum mollis. Integer egestas justo sit amet rutrum pellentesque. Ut mattis porttitor ornare. Cras auctor condimentum ligula quis placerat. Sed cursus sed ante vel gravida.
+
+        </p>
+        
+        
+    
+    </div>    
+    </div>
+
+    
+</body>
+
+
+
+</html>
