@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Panoramica</title> 
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <link rel="stylesheet" href="../CSS/Ressurser.css"> 
+    <link rel="icon" href="../pics/OsloMet_logo.png"> 
+</head> 
+ 
+<body> 
+    <div class="header"> 
+        <div id="myNav" class="overlay"> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <div class="overlay-content"> 
+                <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;"> 
+                <div class="profileName"> 
+                    <p>Kari Nordmann</p> 
+                </div> 
+                <a href="#">Innstillinger</a> 
+                <a href="#">Logg ut</a> 
+            </div> 
+        </div> 
+ 
+        <a href="index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
+        <div class="overskrift"> 
+            <h1>Panoramica</h1> 
+        </div> 
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile" 
+                src="../pics/user.png" alt="Profil ikon"></span> 
+        <script> 
+            function openNav() { 
+                if (window.matchMedia("(max-width: 450px)").matches) { 
+                    document.getElementById("myNav").style.height = "100%"; 
+                } else { 
+                    document.getElementById("myNav").style.width = "25%"; 
+                } 
+            } 
+            function closeNav() { 
+                if (window.matchMedia("(max-width: 450px)").matches) { 
+                    document.getElementById("myNav").style.height = "0%"; 
+                } else { 
+                    document.getElementById("myNav").style.width = "0%"; 
+                } 
+            } 
+        </script> 
+    </div> 
+    <div class="menu"> 
+        <div class="linker1"> 
+            <a href="../HTML/index.html"> 
+                <div class="menuLink">HOVEDSIDE</div> 
+            </a> 
+            <a href="#"> 
+                <div class="menuLink">OPPGAVER</div> 
+            </a> 
+            <a href="#"> 
+                <div class="menuLink">KALENDER</div> 
+            </a>  
+        </div> 
+        <div class="linker2"> 
+            <a href="#"> 
+                <div class="menuLink">KARAKTERER</div> 
+            </a> 
+            <a href="#"> 
+                <div class="menuLink" id="active">RESSURSER</div> 
+            </a> 
+            <a href="https://outlook.com/hioa.no/" target="_blank"> 
+                <div class="menuLink">EPOST</div> 
+            </a> 
+        </div> 
+    </div> 
+    <div class="contentWrap"> 
+        <div class="ressurser">
+            <div class="headerRessurser">
+                <h1>Nyttige nettsider i studiehverdagen</h1>
+            </div>
+            <div class="bodyRessurser">
+                <div class="ressursBoks">
+                    <a href="https://student.oslomet.no/si-ifra/" target="_blank">Si ifra!</a> <!--"target="_blank"" hentet fra W3Schools-->
+                    <h3>På denne siden kan du si ifra om forhold knyttet til ditt læringsmiljø, enten det fysiske eller psykososiale, eller andre ting du ønsker å si ifra om.</h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://student.oslomet.no/" target="_blank">Min side på student.oslomet.no</a> 
+                    <h3>På denne siden kan du blant annet timeplanen din og informasjon om studiet.</h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://outlook.office.com/mail/inbox/" target="_blank">E-post i Office 365</a> 
+                    <h3>Her får du tilgang til student-e-posten din.</h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://fsweb.no/studentweb/login.jsf?inst=FSHIOA/" target="_blank">Studentweb</a>
+                    <h3>På Studentweb semesterregistrerer du deg og finner informasjon om eksamen og resultater. </h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://idp.feide.no/simplesaml/module.php/feide/login.php?asLen=285&AuthState=_a5b8ce608609c7a763e223eb580d4b25de25db0247%3Ahttps%3A%2F%2Fidp.feide.no%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Ftp.uio.no%252Fsimplesaml%252Fmodule.php%252Fsaml%252Fsp%252Fmetadata.php%252Ffeide-sp%26cookieTime%3D1570270998%26RelayState%3Dhttps%253A%252F%252Ftp.uio.no%252Foslomet%252Frombestilling%252F/" target="_blank">Reserver grupperom</a>
+                    <h3>Reserver grupperom på campus.</h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/search?vid=HIOA&amp=&amp=&amp=&amp=&sortby=rank&lang=no_NO/" target="_blank">Oria - Universitetsbibliotekets søkemotor</a>
+                    <h3>Søk opp litteratur og finn tilgjengelighet på bibliotekene og på nett.</h3>
+                </div>
+                <div class="ressursBoks">
+                    <a href="https://sio.no/" target="_blank">SiO - Studentskipnaden i Oslo og Akershus</a>
+                    <h3>Finn informasjon om blant annet SiO Helse, SiO Trening, SiO Bolig, foreninger og kurs.</h3>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</body> 
+ 
+</html>
