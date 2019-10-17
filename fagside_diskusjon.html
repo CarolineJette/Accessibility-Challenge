@@ -78,34 +78,33 @@
         
 <!-- Under her kommer alt som er spesifikt for fagsidene-->
     <div class="fagsideMeny">
-        <div class="fagsideDrop">
+        <div class="fagsideDrop" tabindex="14">
             <button class="fagsideDropBtn">VELG FAG HER</button>
             <div class="fagsideDropInnhold">
-                <a href="#">Diskret matematikk</a>
-                <a href="#">Programmering</a>
-                <a href="#">Webutvikling</a>
+                <a href="#" tabindex="15">Diskret matematikk</a>
+                <a href="#" tabindex="16">Programmering</a>
+                <a href="#" tabindex="17">Webutvikling</a>
              </div>
             </div>
-        <a href="fagside_forside.html">FORSIDE</a>
-        <a href="fagside_oppgaver.html">OPPGAVER</a>
-        <a href="fagside_fremdriftsplan.html">FREMDRIFTSPLAN</a>
-        <a href="fagside_diskusjon.html" class="active">DISKUSJON</a>
-        <a href="fagside_filer.html">FILER</a>
-    
+        <a href="fagside_forside.html" tabindex="18">FORSIDE</a>
+        <a href="fagside_oppgaver.html" tabindex="19">OPPGAVER</a>
+        <a href="fagside_fremdriftsplan.html" tabindex="20">FREMDRIFTSPLAN</a>
+        <a href="fagside_diskusjon.html" class="active" tabindex="21">DISKUSJON</a>
+        <a href="fagside_filer.html" tabindex="22">FILER</a>
     </div>
     
     
     <div class="fagsideDiskusjon">
         <div class="fagsideDiskusjonSpr">
-        <form action="/action_page.php"> <label for="Spørsmål til foreleser">Har du et spørsmål til foreleser?</label><br><br>
+        <form action="/action_page.php" tabindex="23"> <label for="Spørsmål til foreleser">Har du et spørsmål til foreleser?</label><br><br>
             <textarea rows="10" cols="30">
             </textarea>
             <br><br><input type="submit" value="Send inn">
         </form>
             
-        <div class="fagsideDiskusjonSvar1">
+        <div class="fagsideDiskusjonSvar1" tabindex="24">
             <p><b>Tidligere spørsmål og svar fra foreleser:</b></p>
-            <div class="fagsideDiskusjonSvar2">
+            <div class="fagsideDiskusjonSvar2" tabindex="25">
                 <p>
                 20.08.2019: Når har vi forelesning i dette faget?<br>
                 - Hei, forelesning er på mandager fra 14-17.<br><br>
@@ -130,16 +129,16 @@
             </div>
     
         
-        <form action="/action_page.php"><label for="Spørsmål til medelever" style="margin-top: 5%;">Har du et spørsmål til medelever?</label><br><br>
+        <form action="/action_page.php" tabindex="26"><label for="Spørsmål til medelever">Har du et spørsmål til medelever?</label><br><br>
             <textarea rows="10" cols="30">
             </textarea>
             <br><br><input type="submit" value="Send inn">
             </form>
             
-            <div class="fagsideDiskusjonSvar3">
+            <div class="fagsideDiskusjonSvar3" tabindex="27">
                 <p><b>Tidligere spørsmål og svar fra medelever:</b></p>
         
-                <div class="fagsideDiskusjonSvar2">
+                <div class="fagsideDiskusjonSvar2" tabindex="28">
                     <p><bolder>
                 20.08.2019: Vil noen være på gruppe med meg?</bolder><br>
                 - Hei, forelesning er på mandager fra 14-17.<br><br>
@@ -154,13 +153,9 @@
                     </p>
                 </div>
             </div>
-            
         </div>
-
     </div>
-    
-    
-
+        
     </div>
 </body>
 </html>
