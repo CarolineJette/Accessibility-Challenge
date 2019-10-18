@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="stylesheet" href="../css/kalenderen.css">
+    <link rel="icon" href="../pic/OsloMet_logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../pic/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <img class="oslometLogo" src="../pic/OsloMet_logo.png" alt="OsloMet_logo">
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../pic/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+            <a href="#">
+                <div class="menuLink">HOVEDSIDE</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">OPPGAVER</div>
+            </a>
+            <a href="kalenderen.html">
+                <div class="menuLink" id="active">KALENDER</div>
+            </a>
+        </div>
+        <div class="linker2">
+            <a href="#">
+                <div class="menuLink">KARAKTERER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">RESSURSER</div>
+            </a>
+            <a href="https://outlook.com/hioa.no/" target="_blank">
+                <div class="menuLink">EPOST</div>
+            </a>
+        </div>
+    </div>
+    <div class="contentWrap">
+
+<!-- Kode for kalenderen-->
+
+    <div class="overskriftkalender">
+        <div class="tekstkalender" tabindex="14">KALENDER</div>
+    </div>
+
+    <div class="måned" tabindex="15">
+        <ul>
+            <li class="forrige" tabindex="16">&#10094;</li>
+            <li class="neste" tabindex="17">&#10095;</li>
+            <li>Oktober<br><span style="font-size:18px">2019</span></li>
+        </ul>
+    </div>
+    <ul class="ukedager" tabindex="18">
+        <li>Mandag</li>
+        <li>Tirsdag</li>
+        <li>Onsdag</li>
+        <li>Torsdag</li>
+        <li>Fredag</li>
+        <li>Lørdag</li>
+        <li>Søndag</li>
+    </ul>
+    <ul class="dager" tabindex="19">
+        <li>1
+            <dt>Obligatorisk innlevering 1 i DAPE1300 blir publisert klokken 12.00</dt>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5
+            <dt>08.30 Forelesning DAPE1400 (Lærer)</dt>
+        </br>
+            <dd>12.30 Øving DAPE1400</dd>
+        </li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14
+            <dt>Obligatorisk innlevering 1 i DAPE1300 klokken 23.55</dt>
+        </li>
+        <li>15
+            <dt>Obligatorisk innlevering 1 i DAPE1400 blir publisert klokken 10.00 </dt>
+        </li>
+        <li>16</li>
+        <li>17
+            <dt>12.30 Forelesning DAFE1400 (Lærer)</dt>
+        </br>
+            <dd>14.30 Øving DAFE1200</dd>
+        </li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22
+            <dt>08.30 Øving DAPE1400</dt>
+        </br>
+            <dd>12.30 Forelesning DAFE1200 (Lærer)</dd>
+        </br>
+            <dd>14.30 Øving DAFE1200</dd>
+        </li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28
+            <dt>Obligatorisk innlevering 1 i DAPE1400 klokken 23.55</dt>
+        </li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+    </ul>
+    </div>
+</body>
+
+</html>
