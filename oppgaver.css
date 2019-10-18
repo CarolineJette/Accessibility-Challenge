@@ -177,43 +177,36 @@ body{
     }
   }
 
-  *{
-    font-family: sans-serif;
-  }
-
   #active{
     background-color: #0203013b;
   }
 
-  .hoveddel{
-    margin: 40px
-  }
-
   .blokk{
     display: flex;
-    width: 90%;
+    width: 100%;
   }
 
   .tittelfag{
-    width: 86%;
+    width: 96%;
+    margin-left: 2%;
     background-color: #FFDB15;
     padding: 10px;
-    margin-left: 15px;
     border-style: solid;
-    border-color: #B5A197;
-    margin-top: 20px;
+    border-color: #020301;
+    margin-bottom: 30px;
   }
 
   .blokk .oppgaver{
-    width: 30%;
+    width: 33%;
     background-color: #F3F5F9;
     padding-left: 3%;
     padding-top: 20px;
-    margin: 15px;
+    margin-bottom: 30px;
     border-style: solid;
-    border-color: #B5A197;
+    border-color: #020301;
     display: inline-block;
     float: left;
+    margin-left: 2%;
   }
 
   .oppgaver h3{
@@ -247,22 +240,10 @@ body{
     width: 10%;
   }
 
-  @media only screen and (max-width: 1200px){
-    .blokk .oppgaver{
-      margin-left: 15%;
-      width: 70%;
-      float: left;
-      display: inline-block;
-    }
-    .blokk{
-      display: inline-block;
-      width: 90%;
-    }
-  }
-
 @media only screen and (max-width: 900px){
   .tittelfag{
     width: 90%;
+    margin-left: 5%;
   }
 }
 
@@ -275,6 +256,6 @@ body{
   }
   .blokk{
     display: inline-block;
-    width: 10%0;
+    width: 100%;
   }
 }
