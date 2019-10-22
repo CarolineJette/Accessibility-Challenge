@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Panoramica</title>
-    <link rel="stylesheet" href="../CSS/oppgaver.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="icon" href="../pics/OsloMet_logo.png">
+    <link href="../CSS/forsideFagside.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="5">&times;</a>
             <div class="overlay-content">
                 <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
                 <div class="profileName">
-                    <p>Kari Nordmann</p>
+                    <p tabindex="6">Kari Nordmann</p>
                 </div>
-                <a href="#">Settings</a>
-                <a href="#">Logg out</a>
+                <a href="../HTML/settings.html" tabindex="7">Settings</a>
+                <a href="../HTML/Login.html" tabindex="8">Log out</a>
             </div>
         </div>
 
-        <a href="index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a>
+        <a href="indexENG.html" tabindex="1"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
         <div class="overskrift">
-            <h1>Panoramica</h1>
+            <h1 tabindex="2">Panoramica</h1>
         </div>
-        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
-                src="../pics/user.png" alt="Profil ikon"></span>
+        <a class="flag" href="index.html" tabindex="3"><img src="../pics/norwegianFlag.png" alt="Norwegian flag"></a>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()" onkeypress="openNav()" role="menu" tabindex="4"><img class="profile"
+                src="../pics/user.png" alt="Profil icon"></span>
         <script>
             function openNav() {
                 if (window.matchMedia("(max-width: 450px)").matches) {
@@ -49,14 +51,26 @@
     </div>
     <div class="menu">
         <div class="linker1">
-          <a href="../HTML/index.html"> <div class="menuLink">MAIN PAGE</div> </a>
-          <a href="oppgaver.html"> <div class="menuLink" id="active">TASKS</div> </a>
-          <a href="#"> <div class="menuLink">CALENDAR</div> </a>
+                <a href="../HTML/indexENG.html" tabindex="9"> 
+                    <div class="menuLink">FRONTPAGE</div> 
+                </a> 
+                <a href="../HTML/oppgaverENGELSK.html" tabindex="10"> 
+                    <div class="menuLink" >TASKS</div> 
+                </a> 
+                <a href="../HTML/calendar.html" tabindex="11"> 
+                    <div class="menuLink">CALENDAR</div> 
+                </a> 
         </div>
         <div class="linker2">
-          <a href="#"><div class="menuLink">GRADES</div></a>
-         <a href="#"> <div class="menuLink">RESOURCES</div> </a>
-         <a href="https://outlook.com/hioa.no/" target="_blank"><div class="menuLink">EMAIL</div></a>
+                <a href="https://fsweb.no/studentweb/resultater.jsf" target="_blank" tabindex="12"> 
+                        <div class="menuLink">GRADES</div> 
+                    </a> 
+                    <a href="../HTML/Ressursereng.html" tabindex="13"> 
+                        <div class="menuLink">RESOURCES</div> 
+                    </a> 
+                    <a href="https://outlook.com/hioa.no/" target="_blank" tabindex="14"> 
+                        <div class="menuLink">EMAIL</div> 
+                    </a> 
         </div>
     </div>
     <div class="contentWrap">

@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Panoramica</title>
-    <link rel="Stylesheet" type="text/css" href="../CSS/fagsider.css">
-    <link rel="icon" href="../Pictures/OsloMet_logo.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../pics/OsloMet_logo.png">
 </head>
 
 <body>
     <div class="header">
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="5">&times;</a>
             <div class="overlay-content">
-                <img src="../Pictures/user.png" alt="Profil ikon" style="width: 30px;">
+                <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
                 <div class="profileName">
-                    <p>Kari Nordmann</p>
+                    <p tabindex="6">Kari Nordmann</p>
                 </div>
-                <a href="#">Innstillinger</a>
-                <a href="#">Logg ut</a>
+                <a href="../HTML/innstillinger.html" tabindex="7">Innstillinger</a>
+                <a href="../HTML/Logginn.html" tabindex="8">Logg ut</a>
             </div>
         </div>
 
-        <img class="oslometLogo" src="../Pictures/OsloMet_logo.png" alt="OsloMet_logo">
+        <a href="index.html" tabindex="1"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
         <div class="overskrift">
-            <h1>Panoramica</h1>
+            <h1 tabindex="2">Panoramica</h1>
         </div>
-        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
-                src="../Pictures/user.png" alt="Profil ikon"></span>
+        <a class="flag" href="indexENG.html" tabindex="3"><img src="../pics/ukFlag.png" alt="Storbritannia flagg"></a>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()" onkeypress="openNav()" role="menu" tabindex="4"><img class="profile"
+                src="../pics/user.png" alt="Profil ikon"></span>
         <script>
             function openNav() {
                 if (window.matchMedia("(max-width: 450px)").matches) {
@@ -49,31 +50,29 @@
     </div>
     <div class="menu">
         <div class="linker1">
-            <a href="../HTML/index.html">
-                <div class="menuLink" id=active>HOVEDSIDE</div>
-            </a>
-            <a href="#">
-                <div class="menuLink">OPPGAVER</div>
-            </a>
-            <a href="#">
-                <div class="menuLink">KALENDER</div>
-            </a>
+                <a href="../HTML/index.html" tabindex="9"> 
+                    <div class="menuLink">HOVEDSIDE</div> 
+                </a> 
+                <a href="../HTML/oppgaver.html" tabindex="10"> 
+                    <div class="menuLink" >OPPGAVER</div> 
+                </a> 
+                <a href="../HTML/kalenderen.html" tabindex="11"> 
+                    <div class="menuLink">KALENDER</div>
+                </a> 
         </div>
         <div class="linker2">
-            <a href="#">
-                <div class="menuLink">KARAKTERER</div>
-            </a>
-            <a href="#">
-                <div class="menuLink">RESSURSER</div>
-            </a>
-            <a href="https://outlook.com/hioa.no/" target="_blank">
-                <div class="menuLink">EPOST</div>
-            </a>
+                <a href="https://fsweb.no/studentweb/resultater.jsf" target="_blank" tabindex="12"> 
+                        <div class="menuLink">KARAKTERER</div> 
+                    </a> 
+                    <a href="../HTML/ressurser1.html" tabindex="13"> 
+                        <div class="menuLink">RESSURSER</div> 
+                    </a> 
+                    <a href="https://outlook.com/hioa.no/" target="_blank" tabindex="14"> 
+                        <div class="menuLink">EPOST</div> 
+                    </a> 
         </div>
     </div>
     <div class="contentWrap">
-        
-        
       
         
 <!-- Under her kommer alt som er spesifikt for fagsidene-->
