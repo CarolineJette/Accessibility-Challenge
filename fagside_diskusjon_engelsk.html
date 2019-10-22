@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../pics/OsloMet_logo.png">
+    <link href="../CSS/forsideFagside.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="5">&times;</a>
+            <div class="overlay-content">
+                <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p tabindex="6">Kari Nordmann</p>
+                </div>
+                <a href="../HTML/settings.html" tabindex="7">Settings</a>
+                <a href="../HTML/Login.html" tabindex="8">Log out</a>
+            </div>
+        </div>
+
+        <a href="indexENG.html" tabindex="1"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
+        <div class="overskrift">
+            <h1 tabindex="2">Panoramica</h1>
+        </div>
+        <a class="flag" href="index.html" tabindex="3"><img src="../pics/norwegianFlag.png" alt="Norwegian flag"></a>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()" onkeypress="openNav()" role="menu" tabindex="4"><img class="profile"
+                src="../pics/user.png" alt="Profil icon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+                <a href="../HTML/indexENG.html" tabindex="9"> 
+                    <div class="menuLink">FRONTPAGE</div> 
+                </a> 
+                <a href="../HTML/oppgaverENGELSK.html" tabindex="10"> 
+                    <div class="menuLink" >TASKS</div> 
+                </a> 
+                <a href="../HTML/calendar.html" tabindex="11"> 
+                    <div class="menuLink">CALENDAR</div> 
+                </a> 
+        </div>
+        <div class="linker2">
+                <a href="https://fsweb.no/studentweb/resultater.jsf" target="_blank" tabindex="12"> 
+                        <div class="menuLink">GRADES</div> 
+                    </a> 
+                    <a href="../HTML/Ressursereng.html" tabindex="13"> 
+                        <div class="menuLink">RESOURCES</div> 
+                    </a> 
+                    <a href="https://outlook.com/hioa.no/" target="_blank" tabindex="14"> 
+                        <div class="menuLink">EMAIL</div> 
+                    </a> 
+        </div>
+    </div>
+    <div class="contentWrap">
+        
+<!-- Under her kommer alt som er spesifikt for fagsidene-->
+        
+
+    <div class="fagsideMeny">
+        <div class="fagsideDrop" tabindex="15">
+            <button class="fagsideDropBtn">CHOOSE SUBJECT</button>
+            <div class="fagsideDropInnhold">
+                <a href="#" tabindex="16">Mathematics</a>
+                <a href="#" tabindex="17">Programming</a>
+                <a href="#" tabindex="18">Webdesign</a>
+             </div>
+            </div>
+        <a href="../HTML/fagside_forside_engelsk.html" tabindex="19">FRONTPAGE</a>
+        <a href="../HTML/fagside_oppgaver_engelsk.html" tabindex="20">ASSIGNMENTS</a>
+        <a href="../HTML/fagside_fremdriftsplan_engelsk.html" tabindex="21">PLAN</a>
+        <a href="../HTML/fagside_diskusjon_engelsk.html" class="active" tabindex="22">DISCUSSION</a>
+        <a href="../HTML/fagside_filer_engelsk.html" tabindex="23">FILES</a>
+    </div> 
+    
+   <div class="fagsideDiskusjon">
+        <div class="fagsideDiskusjonSpr">
+        <form action="/action_page.php" tabindex="24"> <label for="Spørsmål til foreleser">Do you have a question to the teacher?</label><br><br>
+            <textarea rows="10" cols="30">
+            </textarea>
+            <br><br><input type="submit" value="Send inn">
+        </form>
+            
+        <div class="fagsideDiskusjonSvar1" tabindex="25">
+            <p><b>Former questions and answers from the teacher</b></p>
+            <div class="fagsideDiskusjonSvar2" tabindex="26">
+                <p>
+                20.08.2019: When do we have classes?<br>
+                - Hey, classes are mondays 14-17.<br><br>
+                
+                <bolder>
+                29.08.2019: Where do we have classes?</bolder><br>
+                - Hey, forelesning er i PH647.<br><br>
+            
+                <bolder>
+                06.09.2019: When do we get answer to our assignment?</bolder><br>
+                - Hi, on friday. <br><br>
+                
+                <bolder>
+                29.10.2019: What books is our curriculum?</bolder><br>
+                - Hi, see your email..<br><br>
+            
+                <bolder>
+                06.11.2019: When are you finished correcting our assignment?</bolder><br>
+                - It is already done..
+                </p>
+            </div>
+            </div>
+    
+        
+        <form action="/action_page.php" tabindex="27"><label for="Spørsmål til medelever">Do you have a question to the other students?</label><br><br>
+            <textarea rows="10" cols="30">
+            </textarea>
+            <br><br><input type="submit" value="Send inn">
+            </form>
+            
+            <div class="fagsideDiskusjonSvar3" tabindex="28">
+                <p><b>Former questions and answers from other students</b></p>
+        
+                <div class="fagsideDiskusjonSvar2" tabindex="29">
+                    <p><bolder>
+                20.08.2019: Does anyone wanna join my group?</bolder><br>
+                - Yes!!.<br><br>
+                
+                    <bolder>
+                29.08.2019: Where is our lectures?</bolder><br>
+                - In PH647.<br><br>
+            
+                    <bolder>
+                06.09.2019: If anyone needs help, tell me.</bolder><br>
+                - Thank you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    </div>
+</body>
+</html>
