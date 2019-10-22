@@ -4,11 +4,6 @@ body{
     background-color: #f3f5f9;
     font-family: sans-serif;
 }
-
-#active {
-  background-color: #0203023b;
-}
-
 .header{
     background-color: #ffdb15;
     font-family: 'Arial Black', Arial, Helvetica, sans-serif;
@@ -55,6 +50,9 @@ body{
 .menuLink:hover{
     background-color: #0203013b;
     transition: 0.2s;
+}
+#active{
+    background-color: #0203013b;
 }
 .contentWrap{
     margin-left: 154px;
@@ -121,6 +119,15 @@ body{
       margin: auto;
       margin-bottom: 25px;
   }
+  .flag{
+      position: relative;
+      cursor: pointer;
+      left: 30%;
+      top: 10px;
+  }
+  .flag img{
+      width: 50px;
+  }
   @media screen and (max-width: 450px) {
     .oslometLogo{
         width: 10%;
@@ -174,6 +181,13 @@ body{
     }
     .header{
         position: relative;
+    }
+    .flag img{
+        width: 20px;
+    }
+    .flag{
+        left: 15%;
+        top: 0;
     }
   }
   @media screen and (max-width: 320px){
