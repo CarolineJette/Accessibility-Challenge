@@ -7,30 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <title>Panoramica</title> 
     <link rel="stylesheet" href="../CSS/style.css"> 
-    <link rel="stylesheet" href="../CSS/Ressurser.css"> 
     <link rel="icon" href="../pics/OsloMet_logo.png"> 
+    <link href="../CSS/Ressurser.css" type="text/css" rel="stylesheet"> 
 </head> 
  
 <body> 
     <div class="header"> 
         <div id="myNav" class="overlay"> 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="5">&times;</a> 
             <div class="overlay-content"> 
                 <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;"> 
                 <div class="profileName"> 
-                    <p>Kari Nordmann</p> 
+                    <p tabindex="6">Kari Nordmann</p> 
                 </div> 
-                <a href="#">Settings</a> 
-                <a href="#">Log out</a> 
+                <a href="../HTML/settings.html" tabindex="7">Settings</a> 
+                <a href="../HTML/Login.html" tabindex="8">Log out</a> 
             </div> 
         </div> 
  
-        <a href="index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
+        <a href="indexENG.html" tabindex="1"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a>  
         <div class="overskrift"> 
-            <h1>Panoramica</h1> 
+            <h1 tabindex="2">Panoramica</h1> 
         </div> 
-        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile" 
-                src="../pics/user.png" alt="Profil ikon"></span> 
+        <a class="flag" href="../HTML/ressurser1.html" tabindex="3"><img src="../pics/norwegianFlag.png" alt="Norwegian flag"></a> 
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()" onkeypress="openNav()" role="menu" tabindex="4"><img class="profile" 
+                src="../pics/user.png" alt="Profil icon"></span> 
         <script> 
             function openNav() { 
                 if (window.matchMedia("(max-width: 450px)").matches) { 
@@ -50,61 +51,61 @@
     </div> 
     <div class="menu"> 
         <div class="linker1"> 
-            <a href="../HTML/index.html"> 
-                <div class="menuLink">HOVEDSIDE</div> 
-            </a> 
-            <a href="#"> 
-                <div class="menuLink">OPPGAVER</div> 
-            </a> 
-            <a href="#"> 
-                <div class="menuLink">KALENDER</div> 
-            </a>  
+                <a href="../HTML/indexENG.html" tabindex="9">  
+                    <div class="menuLink">FRONTPAGE</div>  
+                </a>  
+                <a href="../HTML/oppgaverENGELSK.html" tabindex="10">  
+                    <div class="menuLink" >TASKS</div>  
+                </a>  
+                <a href=".../HTML/calendar.html" tabindex="11">  
+                    <div class="menuLink">CALENDAR</div>  
+                </a>  
         </div> 
         <div class="linker2"> 
-            <a href="#"> 
-                <div class="menuLink">KARAKTERER</div> 
-            </a> 
-            <a href="#"> 
-                <div class="menuLink" id="active">RESSURSER</div> 
-            </a> 
-            <a href="https://outlook.com/hioa.no/" target="_blank"> 
-                <div class="menuLink">EPOST</div> 
-            </a> 
+                <a href="https://fsweb.no/studentweb/resultater.jsf" target="_blank" tabindex="12">  
+                        <div class="menuLink">GRADES</div>  
+                    </a>  
+                    <a href="../HTML/Ressursereng.html" tabindex="13">  
+                        <div class="menuLink" id="active">RESOURCES</div>  
+                    </a>  
+                    <a href="https://outlook.com/hioa.no/" target="_blank" tabindex="14">  
+                        <div class="menuLink">EMAIL</div>  
+                    </a>  
         </div> 
     </div> 
     <div class="contentWrap"> 
         <div class="ressurser">
-            <div class="headerRessurser" tabindex="14">
+            <div class="headerRessurser" tabindex="15">
                 <h1>Useful websites for student life</h1>
             </div>
             <div class="bodyRessurser">
-                <div class="ressursBoks" tabindex="15">
-                    <a href="https://student.oslomet.no/si-ifra/" target="_blank">Report it!</a> <!--"target="_blank"" hentet fra W3Schools-->
-                    <h3>On this website you can report circumstances relating to your learning environment. Nothing is too big or too small to report. You may provide us with criticism or praise. All inquiries will be read and answered. </h3>
+                <div class="ressursBoks">
+                    <a href="https://student.oslomet.no/si-ifra/" target="_blank" tabindex="16">Report it!</a> <!--"target="_blank"" hentet fra W3Schools-->
+                    <h3 tabindex="17">On this website you can report circumstances relating to your learning environment. Nothing is too big or too small to report. You may provide us with criticism or praise. All inquiries will be read and answered. </h3>
                 </div>
-                <div class="ressursBoks" tabindex="16">
-                    <a href="https://student.oslomet.no/" target="_blank">My page on student.oslomet.no</a> 
-                    <h3>On this website you can find your schedule and information about your study.</h3>
+                <div class="ressursBoks">
+                    <a href="https://student.oslomet.no/" target="_blank" tabindex="18">My page on student.oslomet.no</a> 
+                    <h3 tabindex="19">On this website you can find your schedule and information about your study.</h3>
                 </div>
-                <div class="ressursBoks" tabindex="17">
-                    <a href="https://outlook.office.com/mail/inbox/" target="_blank">E-mail in Office 365</a> 
-                    <h3>Get access to your student e-mail.</h3>
+                <div class="ressursBoks">
+                    <a href="https://outlook.office.com/mail/inbox/" target="_blank" tabindex="20">E-mail in Office 365</a> 
+                    <h3 tabindex="21">Get access to your student e-mail.</h3>
                 </div>
-                <div class="ressursBoks" tabindex="18">
-                    <a href="https://fsweb.no/studentweb/login.jsf?inst=FSHIOA/" target="_blank">Studentweb</a>
-                    <h3>On Studentweb you register for the semester and find information about your exams and the results.</h3>
+                <div class="ressursBoks">
+                    <a href="https://fsweb.no/studentweb/login.jsf?inst=FSHIOA/" target="_blank" tabindex="22">Studentweb</a>
+                    <h3 tabindex="23">On Studentweb you register for the semester and find information about your exams and the results.</h3>
                 </div>
-                <div class="ressursBoks" tabindex="19">
-                    <a href="https://idp.feide.no/simplesaml/module.php/feide/login.php?asLen=285&AuthState=_a5b8ce608609c7a763e223eb580d4b25de25db0247%3Ahttps%3A%2F%2Fidp.feide.no%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Ftp.uio.no%252Fsimplesaml%252Fmodule.php%252Fsaml%252Fsp%252Fmetadata.php%252Ffeide-sp%26cookieTime%3D1570270998%26RelayState%3Dhttps%253A%252F%252Ftp.uio.no%252Foslomet%252Frombestilling%252F/" target="_blank">Book group study rooms</a>
-                    <h3>Book group study rooms at campus.</h3>
+                <div class="ressursBoks">
+                    <a href="https://idp.feide.no/simplesaml/module.php/feide/login.php?asLen=285&AuthState=_a5b8ce608609c7a763e223eb580d4b25de25db0247%3Ahttps%3A%2F%2Fidp.feide.no%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Ftp.uio.no%252Fsimplesaml%252Fmodule.php%252Fsaml%252Fsp%252Fmetadata.php%252Ffeide-sp%26cookieTime%3D1570270998%26RelayState%3Dhttps%253A%252F%252Ftp.uio.no%252Foslomet%252Frombestilling%252F/" target="_blank" tabindex="24">Book group study rooms</a>
+                    <h3 tabindex="25">Book group study rooms at campus.</h3>
                 </div>
-                <div class="ressursBoks" tabindex="20">
-                    <a href="https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/search?vid=HIOA&amp=&amp=&amp=&amp=&sortby=rank&lang=no_NO/" target="_blank">Oria - The University Library's search engine</a>
-                    <h3>Search for literature and find availability in library and online.</h3>
+                <div class="ressursBoks">
+                    <a href="https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/search?vid=HIOA&amp=&amp=&amp=&amp=&sortby=rank&lang=no_NO/" target="_blank" tabindex="26">Oria - The University Library's search engine</a>
+                    <h3 tabindex="27">Search for literature and find availability in library and online.</h3>
                 </div>
-                <div class="ressursBoks" tabindex="21">
-                    <a href="https://sio.no/" target="_blank">SiO - The Student Welfare Organisation of Oslo and Akershus</a>
-                    <h3>Find information about SiO Health, SiO Sports, SiO Housing, association and course.</h3>
+                <div class="ressursBoks">
+                    <a href="https://sio.no/" target="_blank" tabindex="28">SiO - The Student Welfare Organisation of Oslo and Akershus</a>
+                    <h3 tabindex="29">Find information about SiO Health, SiO Sports, SiO Housing, association and course.</h3>
                 </div>
             </div>
         </div> 
