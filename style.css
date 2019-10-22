@@ -119,6 +119,15 @@ body{
       margin: auto;
       margin-bottom: 25px;
   }
+  .flag{
+      position: relative;
+      cursor: pointer;
+      left: 30%;
+      top: 10px;
+  }
+  .flag img{
+      width: 50px;
+  }
   @media screen and (max-width: 450px) {
     .oslometLogo{
         width: 10%;
@@ -172,6 +181,13 @@ body{
     }
     .header{
         position: relative;
+    }
+    .flag img{
+        width: 20px;
+    }
+    .flag{
+        left: 15%;
+        top: 0;
     }
   }
   @media screen and (max-width: 320px){
