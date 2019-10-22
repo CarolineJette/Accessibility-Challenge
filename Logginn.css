@@ -1,0 +1,123 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: white;
+}
+
+.boks{
+    border: solid black 1px;
+    width:40%;
+    margin-left: 30%;
+    margin-top:5%;
+    background-color:white;
+}
+
+.overskrift{
+    display: flex;
+    border-bottom: solid black 1px;
+    background-color: #FFDB15;
+    padding: 1%;
+}
+
+.språk{
+    width:25%;  
+    position: absolute;
+}
+
+.norsk img{
+    width:15%;
+    margin-top:2%;
+}
+
+.engelsk img{
+    width: 15%;
+    height: 10%;
+    margin-top:3%;
+}
+
+
+
+.canvas{
+    /*border-bottom: solid black 1px;
+    background-color: #FFDB15;
+    padding: 1%;*/
+    width: 100%;
+}
+.canvas h1{
+    text-align: center;
+    /*background-color: #FFDB15;*/
+    font-size: 40px;
+    margin-right: 10%;
+    margin-left:9%;
+}
+
+.logo img{
+    width:20%;
+    margin-left:40%;
+}
+
+.brukernavn{
+    margin-left:23%;
+}
+
+.brukernavn p{
+    font-size:20px;
+}
+
+.brukernavn input{
+    width:70%;
+    height: 30px;
+    border:solid gray 1px;
+    font-size:14px;
+}
+
+.passord{
+    margin-top:5%;
+    margin-left:23%;
+}
+
+.passord p{
+    font-size:20px;
+}
+
+.passord input{
+    width:70%;
+    height: 30px;
+    border:solid gray 1px;
+    font-size: 14px;
+}
+
+
+
+.loggInn{
+    margin-top:6%;
+    margin-left:23%;
+    margin-bottom: 7%;
+}
+
+.loggInn button{
+    width:70%;
+    height: 40px;
+    background-color:#dddada;
+    font-size: 20px;
+}
+
+.loggInn button:hover{
+    background-color: #868686;
+    color:white;
+}
+
+
+.glemtPassord{
+    margin-top:2%;
+    margin-left: 23%;
+    font-size: 15px;
+}
+
+@media only screen and(max-width:577px){
+    .loggInn button{
+        font-size: 15px;
+    }
+}
+
+
