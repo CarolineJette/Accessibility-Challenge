@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="stylesheet" href="../css/calendar.css">
+    <link rel="icon" href="../pic/OsloMet_logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../pic/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <img class="oslometLogo" src="../pic/OsloMet_logo.png" alt="OsloMet_logo">
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../pic/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+            <a href="#">
+                <div class="menuLink">HOVEDSIDE</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">OPPGAVER</div>
+            </a>
+            <a href="kalenderen.html">
+                <div class="menuLink" id="active">KALENDER</div>
+            </a>
+        </div>
+        <div class="linker2">
+            <a href="#">
+                <div class="menuLink">KARAKTERER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">RESSURSER</div>
+            </a>
+            <a href="https://outlook.com/hioa.no/" target="_blank">
+                <div class="menuLink">EPOST</div>
+            </a>
+        </div>
+    </div>
+    <div class="contentWrap">
+
+<!-- Kode for engelsk kalender-->
+
+    <div class="overskriftkalender">
+        <div class="tekstkalender" tabindex="14">CALENDAR</div>
+    </div>
+
+    <div class="måned">
+        <ul>
+            <li class="forrige" tabindex="16">&#10094;</li>
+            <li class="neste" tabindex="17">&#10095;</li>
+            <li tabindex="15">October<br><span style="font-size:18px">2019</span></li>
+        </ul>
+    </div>
+    <ul class="ukedager" tabindex="18">
+        <li tabindex="19">Monday</li>
+        <li tabindex="20">Tuesday</li>
+        <li tabindex="21">Wednesday</li>
+        <li tabindex="22">Thursday</li>
+        <li tabindex="23">Friday</li>
+        <li tabindex="24">Saturday</li>
+        <li tabindex="25">Sunday</li>
+    </ul>
+    <ul class="dager">
+        <li tabindex="26">1
+            <dt tabindex="27">Mandatory task 1 in DAPE1300 is published at 12pm.</dt>
+        </li>
+        <li tabindex="28">2</li>
+        <li tabindex="29">3</li>
+        <li tabindex="30">4</li>
+        <li tabindex="31">5
+            <dt tabindex="32">08.30am lecture DAPE1400 (Teacher)</dt>
+        </br>
+            <dd tabindex="33">12.30pm lab in DAPE1400</dd>
+        </li>
+        <li tabindex="34">6</li>
+        <li tabindex="35">7</li>
+        <li tabindex="36">8</li>
+        <li tabindex="37">9</li>
+        <li tabindex="38">10</li>
+        <li tabindex="39">11</li>
+        <li tabindex="40">12</li>
+        <li tabindex="41">13</li>
+        <li tabindex="42">14
+            <dt tabindex="43">Mandatory task 1 in DAPE1300 has to be submitted by 11.55pm.</dt>
+        </li>
+        <li tabindex="44">15
+            <dt tabindex="45">Mandatory task 1 in DAPE1400 is publishes at 10am.</dt>
+        </li>
+        <li tabindex="46">16</li>
+        <li tabindex="47">17
+            <dt tabindex="48">12.30pm lecture DAFE1400 (Teacher)</dt>
+        </br>
+            <dd tabindex="49">02.30pm lab DAFE1200</dd>
+        </li>
+        <li tabindex="50">18</li>
+        <li tabindex="51">19</li>
+        <li tabindex="52">20</li>
+        <li tabindex="53">21</li>
+        <li tabindex="54">22
+            <dt tabindex="55">08.30am lab DAPE1400</dt>
+        </br>
+            <dd tabindex="56">12.30pm lecture DAFE1200 (Teacher)</dd>
+        </br>
+            <dd tabindex="57">02.30pm lab DAFE1200</dd>
+        </li>
+        <li tabindex="58">23</li>
+        <li tabindex="59">24</li>
+        <li tabindex="60">25</li>
+        <li tabindex="61">26</li>
+        <li tabindex="62">27</li>
+        <li tabindex="63">28
+            <dt tabindex="64">Mandatory task 1 in DAPE1400 has to be submitted by 11.55pm.</dt>
+        </li>
+        <li tabindex="65">29</li>
+        <li tabindex="66">30</li>
+        <li tabindex="67">31</li>
+    </ul>
+    </div>
+</body>
+</html>

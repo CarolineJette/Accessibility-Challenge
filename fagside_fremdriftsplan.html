@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="Stylesheet" type="text/css" href="../CSS/fagsider.css">
+    <link rel="icon" href="../Pictures/OsloMet_logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../Pictures/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <img class="oslometLogo" src="../Pictures/OsloMet_logo.png" alt="OsloMet_logo">
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../Pictures/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+            <a href="../HTML/index.html">
+                <div class="menuLink" id=active>HOVEDSIDE</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">OPPGAVER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">KALENDER</div>
+            </a>
+        </div>
+        <div class="linker2">
+            <a href="#">
+                <div class="menuLink">KARAKTERER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">RESSURSER</div>
+            </a>
+            <a href="https://outlook.com/hioa.no/" target="_blank">
+                <div class="menuLink">EPOST</div>
+            </a>
+        </div>
+    </div>
+    <div class="contentWrap">
+        
+        
+       
+        
+<!-- Under her kommer alt som er spesifikt for fagsidene-->  
+    <div class="fagsideMeny">
+        <div class="fagsideDrop" tabindex="14">
+            <button class="fagsideDropBtn">VELG FAG HER</button>
+            <div class="fagsideDropInnhold">
+                <a href="#" tabindex="15">Diskret matematikk</a>
+                <a href="#" tabindex="16">Programmering</a>
+                <a href="#" tabindex="17">Webutvikling</a>
+             </div>
+            </div>
+        <a href="fagside_forside.html" tabindex="18">FORSIDE</a>
+        <a href="fagside_oppgaver.html" tabindex="19">OPPGAVER</a>
+        <a href="fagside_fremdriftsplan.html" class="active" tabindex="20">FREMDRIFTSPLAN</a>
+        <a href="fagside_diskusjon.html" tabindex="21">DISKUSJON</a>
+        <a href="fagside_filer.html" tabindex="22">FILER</a>
+    </div>
+    
+    
+    <div class="fagsideFremdriftsplan" tabindex="23">
+        <p> Nedenfor følger fremdriftsplanen for det aktuelle faget. <br>
+        </p>
+        <img src="../Pictures/Skjermbilde.PNG" tabindex="24" alt="Fremdriftsplan etter uke og måned">
+    </div>
+    
+    </div>
+</body>
+</html>

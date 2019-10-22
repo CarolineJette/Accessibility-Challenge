@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="stylesheet" href="../CSS/oppgaver.css">
+    <link rel="icon" href="../pics/OsloMet_logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <a href="index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a>
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../pics/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+          <a href="../HTML/index.html"> <div class="menuLink">HOVEDSIDE</div> </a>
+          <a href="oppgaver.html"> <div class="menuLink" id="active">OPPGAVER</div> </a>
+          <a href="#"> <div class="menuLink">KALENDER</div> </a>
+        </div>
+        <div class="linker2">
+          <a href="#"><div class="menuLink">KARAKTERER</div></a>
+         <a href="#"> <div class="menuLink">RESSURSER</div> </a>
+         <a href="https://outlook.com/hioa.no/" target="_blank"><div class="menuLink">EPOST</div></a>
+        </div>
+    </div>
+    <div class="contentWrap">
+
+      <div class="hoveddel">
+
+        <div class="fag">
+          <div class="tittelfag" tabindex="14">
+            <h2 >DAPE1300 Diskret mattematikk:</h2>
+          </div>
+          <div class="blokk">
+
+          <div class="oppgaver" tabindex="15">
+            <h3  tabindex="16">Oblig:<p>(HVA DU SKAL LEVERE)</p></h3>
+            <ul>
+              <li tabindex="17"><a href="#">Må leveres:</a></li>
+              <li tabindex="18"><a href="#">Må leveres:</a></li>
+              <li tabindex="19"><a href="#">Må leveres:</a></li>
+              <li tabindex="20"><a href="#">Må leveres:</a></li>
+              <li tabindex="21"><a href="#">Må leveres:</a></li>
+              <li tabindex="22"><a href="#">Må leveres:</a></li>
+            </ul>
+          </div>
+          <div class="oppgaver" tabindex="23">
+            <h3  tabindex="24">Øve:<p>(OPPGAVER TIL PENSUM, LEKSEØVING, TIDLIGERE EKSAMENS-OPPGAVER)</p></h3>
+
+            <p tabindex="25">Oppgaver til pensum:</p>
+            <ul>
+              <li tabindex="26"><a href="#">Oppgaver: </a></li>
+              <li tabindex="27"><a href="#">Oppgaver: </a></li>
+              <li tabindex="28"><a href="#">Oppgaver: </a></li>
+            </ul>
+            <p tabindex="29">Eksamensoppgaver:</p>
+            <ul>
+              <li tabindex="30"><a href="#">Oppgaver: </a></li>
+              <li tabindex="31"><a href="#">Oppgaver: </a></li>
+              <li tabindex="32"><a href="#">Oppgaver: </a></li>
+            </ul>
+          </div>
+          <div class="oppgaver" tabindex="33">
+            <h3 tabindex="34">Innlevering:<p>(HVA DU HAR LEVERT)</p></h3>
+            <ul>
+              <li tabindex="35">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="36">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="37">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="38">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="39">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="fag">
+          <div class="tittelfag" tabindex="40">
+            <h2 tabindex="41">DAPE1400 Programmering:</h2>
+          </div>
+          <div class="blokk">
+
+          <div class="oppgaver" tabindex="42">
+            <h3 tabindex="43">Oblig:<p>(HVA DU SKAL LEVERE)</p></h3>
+            <ul>
+              <li tabindex="44"><a href="#">Må leveres:</a></li>
+              <li tabindex="45"><a href="#">Må leveres:</a></li>
+              <li tabindex="46"><a href="#">Må leveres:</a></li>
+              <li tabindex="47"><a href="#">Må leveres:</a></li>
+              <li tabindex="48"><a href="#">Må leveres:</a></li>
+              <li tabindex="49"><a href="#">Må leveres:</a></li>
+            </ul>
+          </div>
+          <div class="oppgaver" tabindex="50">
+            <h3 tabindex="51">Øve:<p>(OPPGAVER TIL PENSUM, LEKSEØVING, TIDLIGERE EKSAMENS-OPPGAVER)</p></h3>
+
+            <p tabindex="52">Oppgaver til pensum:</p>
+            <ul>
+              <li tabindex="53"><a href="#">Oppgaver: </a></li>
+              <li tabindex="54"><a href="#">Oppgaver: </a></li>
+              <li tabindex="55"><a href="#">Oppgaver: </a></li>
+            </ul>
+            <p tabindex="56">Eksamensoppgaver:</p>
+            <ul>
+              <li tabindex="57"><a href="#">Oppgaver: </a></li>
+              <li tabindex="58"><a href="#">Oppgaver: </a></li>
+              <li tabindex="59"><a href="#">Oppgaver: </a></li>
+            </ul>
+          </div>
+          <div class="oppgaver" tabindex="60">
+            <h3 tabindex="61">Innlevering:<p>(HVA DU HAR LEVERT)</p></h3>
+            <ul>
+              <li tabindex="62">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="63">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="64">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="65">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              <li tabindex="66">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                 /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+            </ul>
+          </div>
+          </div>
+          </div>
+
+        <div class="fag">
+          <div class="tittelfag" tabindex="67">
+            <h2 tabindex="68">DAFE1200 Web utvikling og innkluderende design:</h2>
+          </div>
+          <div class="blokk">
+
+          <div class="oppgaver" tabindex="69">
+              <h3 tabindex=" ">Oblig:<p>(HVA DU SKAL LEVERE)</p></h3>
+              <ul>
+                <li tabindex="70"><a href="#">Må leveres:</a></li>
+                <li tabindex="71"><a href="#">Må leveres:</a></li>
+                <li tabindex="72"><a href="#">Må leveres:</a></li>
+                <li tabindex="73"><a href="#">Må leveres:</a></li>
+                <li tabindex="74"><a href="#">Må leveres:</a></li>
+                <li tabindex="75"><a href="#">Må leveres:</a></li>
+              </ul>
+            </div>
+            <div class="oppgaver" tabindex="76">
+              <h3 tabindex="77">Øve:<p>(OPPGAVER TIL PENSUM, LEKSEØVING, TIDLIGERE EKSAMENS-OPPGAVER)</p></h3>
+
+              <p tabindex="78">Oppgaver til pensum:</p>
+              <ul>
+                <li tabindex="79"><a href="#">Oppgaver: </a></li>
+                <li tabindex="80"><a href="#">Oppgaver: </a></li>
+                <li tabindex="81"><a href="#">Oppgaver: </a></li>
+              </ul>
+              <p tabindex="82">Eksamensoppgaver:</p>
+              <ul>
+                <li tabindex="83"><a href="#">Oppgaver: </a></li>
+                <li tabindex="84"><a href="#">Oppgaver: </a></li>
+                <li tabindex="85"><a href="#">Oppgaver: </a></li>
+              </ul>
+            </div>
+            <div class="oppgaver" tabindex="86">
+              <h3 tabindex="87">Innlevering:<p>(HVA DU HAR LEVERT)</p></h3>
+              <ul>
+                <li tabindex="88">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                   /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+                <li tabindex="89">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                   /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */> </li>
+                <li tabindex="90">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                   /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+                <li tabindex="91">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                   /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+                <li tabindex="92">Levert: <img src="../BILDER/greentick.png" alt="grønn tick"
+                   /* green tick: https://commons.wikimedia.org/wiki/File:Green_tick_pointed.svg */></li>
+              </ul>
+            </div>
+
+        </div>
+
+      </div>
+          
+    </div>
+</body>
+
+</html>

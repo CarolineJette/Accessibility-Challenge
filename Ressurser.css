@@ -1,0 +1,55 @@
+body {
+    background-color: #F3F5F9;
+    font-family: sans-serif;
+}
+
+
+.headerRessurser {
+    margin-left: 2%;
+}
+
+.headerRessurser h1 {
+    font-weight:normal;
+}
+
+.bodyRessurser {
+    margin-left: 2%;
+    
+}
+
+.bodyRessurser a {
+    font-size: 20px;
+    color: #020301;
+    text-decoration: none; /*text-decoration: none gjør at lenkene ikke har understrek når man ikke holder over dem, slik de har by default*/
+    font-weight:lighter;
+    
+}
+
+.bodyRessurser a:hover {
+    text-decoration: underline; /*text-deocration: underline gjør at lenkene får understrek når man holder over den*/
+}
+
+.bodyRessurser h3 {
+    font-size: 17px;
+    color: #B5A197;
+    font-weight:normal;
+    margin-top: 1%;
+    line-height: 17px;
+    
+}
+
+.ressursBoks {
+    width: 80%;
+    margin-bottom: 2%;
+    margin-right: 0;
+    
+}
+
+
+ @media screen and (max-width: 450px) {
+   .ressursBoks {
+    width: 100%;
+    
+}
+  
+}

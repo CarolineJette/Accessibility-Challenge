@@ -1,0 +1,162 @@
+body{
+    font-family: sans-serif;
+}
+
+.forsideFagsideh1{
+    border: solid;
+    margin-bottom: 2%;
+    padding: 1%;
+    background-color: #FFDB15;
+    margin-top: 1%;
+}
+
+/* emneWrapper wrapper emne1, emne2 og emne3 i forsideFagside. */
+.emneWrapper{
+    display:inline-flex;
+    font-size: 25px;
+}
+
+/* emne1, emne2, emne3 er wrappere rundt hver emne-boks. */
+.emne1{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    border: solid;
+    padding: 2% 2% 0 2%; 
+    background-color: #F3F5F9; 
+}
+
+.emne2{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 3% 0 3%; 
+    border: solid; 
+    padding: 2% 2% 0 2%; 
+    background-color: #F3F5F9; 
+
+}
+
+.emne3{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    border: solid;
+    padding: 2% 2% 0 2%; 
+    background-color: #F3F5F9; 
+}
+
+/* Overskriftene i hver emne-boks, underline when hover over. */
+.emne1h3 a:hover{
+    text-decoration: underline #B5A197;
+}
+
+.emne2h3 a:hover{
+    text-decoration:underline #B5A197;
+}
+
+.emne3h3 a:hover{
+    text-decoration: underline #B5A197;
+}
+
+
+/* Overskriftene i hver emne-boks er en link. (a) */
+.emne1 a{
+    font-size: 30px;
+    text-decoration: none; 
+    color: #B5A197;
+}
+
+.emne2 a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #B5A197;
+}
+
+.emne3 a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #B5A197;
+}
+
+/* Wrapper rundt alle punktene i emne1. */
+.paragrafEmne1{
+    border-top: dotted; 
+    margin-top: 3%;
+}
+
+.paragrafEmne2{
+    border-top: dotted; 
+    margin-top: 11%; 
+}
+
+.paragrafEmne3{
+    border-top: dotted;
+    margin-top: 11%;
+}
+
+/* ListeEmne er punktene i hver boks av emnene. */
+
+.listeEmne1 li{
+    margin: 10% 2% 2% 0;
+}
+
+.listeEmne2 li{
+    margin: 10% 2% 2% 0;
+}
+
+.listeEmne3 li{
+    margin: 10% 2% 2% 0;
+}
+
+
+/* Link i emne1 "Trykk her for mer info" */
+.listeEmne1 a{
+    font-size: 25px;
+    color:#B5A197;
+}
+
+/* Underline når hovrer over. */
+.listeEmne1 a:hover{
+    text-decoration: underline solid #B5A197;
+}
+
+
+@media only screen and (max-width: 1337px){
+    .forsideFagsideWrapper ul {
+        font-size: 15px!important;
+    }
+
+    .forsideFagsideWrapper a{
+        font-size: 20px!important;
+    }
+
+    .forsideFagsideWrapper .listeEmne1 a{
+        font-size: 15px!important;
+    }
+
+}
+
+@media only screen and (max-width: 706px){
+    .emneWrapper{
+        display: inline-block;
+    }
+
+    .emne1{
+        width: 95%;
+        margin: 0!important;
+    }
+    .emne2{
+        width: 95%;
+        margin: 2% 0 2% 0!important;
+    }
+    .emne3{
+        width: 95%;
+        margin: 0!important;
+    }
+
+
+
+    
+
+}
