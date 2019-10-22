@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panoramica</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="icon" href="../pic/OsloMet_logo.png">
+</head>
+
+<body>
+	<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="../pic/user.png" alt="Profil ikon" style="width: 30px;">
+                <div class="profileName">
+                    <p>Kari Nordmann</p>
+                </div>
+                <a href="#">Innstillinger</a>
+                <a href="#">Logg ut</a>
+            </div>
+        </div>
+
+        <img class="oslometLogo" src="../pic/OsloMet_logo.png" alt="OsloMet_logo">
+        <div class="overskrift">
+            <h1>Panoramica</h1>
+        </div>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+                src="../pic/user.png" alt="Profil ikon"></span>
+        <script>
+            function openNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "100%";
+                } else {
+                    document.getElementById("myNav").style.width = "25%";
+                }
+            }
+            function closeNav() {
+                if (window.matchMedia("(max-width: 450px)").matches) {
+                    document.getElementById("myNav").style.height = "0%";
+                } else {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+            }
+        </script>
+    </div>
+    <div class="menu">
+        <div class="linker1">
+            <a href="#">
+                <div class="menuLink">HOVEDSIDE</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">OPPGAVER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">KALENDER</div>
+            </a>
+        </div>
+        <div class="linker2">
+            <a href="#">
+                <div class="menuLink">KARAKTERER</div>
+            </a>
+            <a href="#">
+                <div class="menuLink">RESSURSER</div>
+            </a>
+            <a href="https://outlook.com/hioa.no/" target="_blank">
+                <div class="menuLink">EPOST</div>
+            </a>
+        </div>
+    </div>
+
+<!-- Kode for engelsk innstillinger-->
+
+    <div class="contentWrap">
+	<div class="innstillinger" tabindex="14">
+		<h1 tabindex="15">Settings for Kari Nordmann</h1>
+	</div>
+
+	<div class="infoboks" tabindex="16">
+		<li tabindex="17">Full name: Kari Nordmann</li>
+		<li tabindex="18">Student number: S112233</li>
+		<li tabindex="19">E-mail adress: S112233@panoramica.no</li>
+		<li tabindex="20">Language:</br><button tabindex="21" type="button">Norwegian</button></br><button tabindex="22" type="button">English</button></li>
+	</div>
+</div>
+</body>
+</html>
