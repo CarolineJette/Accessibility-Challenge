@@ -14,22 +14,23 @@
 <body>
     <div class="header">
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" tabindex="5">&times;</a>
             <div class="overlay-content">
                 <img src="../pics/user.png" alt="Profil ikon" style="width: 30px;">
                 <div class="profileName">
-                    <p>Kari Nordmann</p>
+                    <p tabindex="6">Kari Nordmann</p>
                 </div>
-                <a href="#">Innstillinger</a>
-                <a href="#">Logg ut</a>
+                <a href="../HTML/innstillinger.html" tabindex="7">Innstillinger</a>
+                <a href="../HTML/Logginn.html" tabindex="8">Logg ut</a>
             </div>
         </div>
 
-        <a href="index.html"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
+        <a href="index.html" tabindex="1"><img class="oslometLogo" src="../pics/OsloMet_logo.png" alt="OsloMet_logo"></a> 
         <div class="overskrift">
-            <h1>Panoramica</h1>
+            <h1 tabindex="2">Panoramica</h1>
         </div>
-        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="profile"
+        <a class="flag" href="../HTML/BeskjedsideEN.html" tabindex="3"><img src="../pics/ukFlag.png" alt="Storbritannia flagg"></a>
+        <span class="profileMenu" style="font-size:30px;cursor:pointer" onclick="openNav()" onkeypress="openNav()" role="menu" tabindex="4"><img class="profile"
                 src="../pics/user.png" alt="Profil ikon"></span>
         <script>
             function openNav() {
@@ -50,29 +51,30 @@
     </div>
     <div class="menu">
         <div class="linker1">
-                <a href="../HTML/index.html"> 
-                    <div class="menuLink" id="active">HOVEDSIDE</div> 
+                <a href="../HTML/index.html" tabindex="9"> 
+                    <div class="menuLink">HOVEDSIDE</div> 
                 </a> 
-                <a href="#"> 
-                    <div class="menuLink">OPPGAVER</div> 
+                <a href="../HTML/oppgaver.html" tabindex="10"> 
+                    <div class="menuLink" >OPPGAVER</div> 
                 </a> 
-                <a href="#"> 
-                    <div class="menuLink">KALENDER</div> 
+                <a href="../HTML/kalenderen.html" tabindex="11"> 
+                    <div class="menuLink">KALENDER</div>
                 </a> 
         </div>
         <div class="linker2">
-                <a href="#"> 
+                <a href="https://fsweb.no/studentweb/resultater.jsf" target="_blank" tabindex="12"> 
                         <div class="menuLink">KARAKTERER</div> 
                     </a> 
-                    <a href="#"> 
+                    <a href="../HTML/ressurser1.html" tabindex="13"> 
                         <div class="menuLink">RESSURSER</div> 
                     </a> 
-                    <a href="https://outlook.com/hioa.no/" target="_blank"> 
+                    <a href="https://outlook.com/hioa.no/" target="_blank" tabindex="14"> 
                         <div class="menuLink">EPOST</div> 
                     </a> 
         </div>
     </div>
     <div class="contentWrap">
+
         <div class="forsideFagsideWrapper">
 
             <div class="forsideFagsideh1">
@@ -83,7 +85,7 @@
             
             <div class="emne1">
                 <div class="emne1h3">
-                    <a href="../HTML/fagside_forside.html" tabindex="16">DAFE1200-1 19H Webutvikling og inkluderende design</a>
+                    <a href="forsideFagside.html" tabindex="16">DAFE1200-1 19H Webutvikling og inkluderende design</a>
                 </div>
                 <div class="paragrafEmne1">
                     <ul class="listeEmne1">
@@ -101,7 +103,7 @@
             
             <div class="emne2">
                 <div class="emne2h3">
-                    <a href="../HTML/fagside_forside.html" tabindex="24">DAPE1300-1 19H Diskret matematikk</a>
+                    <a href="forsideFagside.html" tabindex="24">DAPE1300-1 19H Diskret matematikk</a>
                 </div>
                 <div class="paragrafEmne2">
                     <ul class="listeEmne2">
@@ -117,7 +119,7 @@
             
             <div class="emne3">
                 <div class="emne3h3">
-                    <a href="../HTML/fagside_forside.html" tabindex="30">DAPE1400-1 19H Programmering</a>
+                    <a href="forsideFagside.html" tabindex="30">DAPE1400-1 19H Programmering</a>
                 </div>
                 <div class="paragrafEmne3">
                     <ul class="listeEmne3">
@@ -134,6 +136,7 @@
             </div>
         </div>
     </div>
+</div>
             
 </body>
 
